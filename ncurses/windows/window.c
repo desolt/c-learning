@@ -10,7 +10,7 @@ int main(void)
     refresh();
 
     WINDOW *win = newwin(20, 40, (LINES - 20) / 2, (COLS - 20) / 2);
-    box(win, 0, 0);
+    wborder(win, '|', '|', '-', '-', '+', '+', '+', '+');
     wrefresh(win);
 
     mvwprintw(win, 2, 2, "Hello, world!");
