@@ -6,7 +6,7 @@ SRCDIR = src
 OBJDIR = $(BUILDDIR)/obj
 
 # Flags
-CFLAGS += -Wall -std=c11
+CFLAGS += -I$(INCDIR) -std=c11 -Wall
 LDFLAGS += -lglfw -lGL
 NDEBUG ?= 0
 
